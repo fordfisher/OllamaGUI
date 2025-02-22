@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DB06C9592D69DD870023246A /* Highlighter in Frameworks */ = {isa = PBXBuildFile; productRef = DB06C9582D69DD870023246A /* Highlighter */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		DB454E332D68DC6D0075E94E /* OllamaGUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OllamaGUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DB454E462D68DE410075E94E /* Exceptions for "OllamaGUI" folder in "OllamaGUI" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DB454E322D68DC6D0075E94E /* OllamaGUI */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DB454E352D68DC6D0075E94E /* OllamaGUI */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DB454E462D68DE410075E94E /* Exceptions for "OllamaGUI" folder in "OllamaGUI" target */,
+			);
 			path = OllamaGUI;
 			sourceTree = "<group>";
 		};
@@ -23,16 +40,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB06C9592D69DD870023246A /* Highlighter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB06C9562D69D68C0023246A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB454E2A2D68DC6D0075E94E = {
 			isa = PBXGroup;
 			children = (
 				DB454E352D68DC6D0075E94E /* OllamaGUI */,
+				DB06C9562D69D68C0023246A /* Frameworks */,
 				DB454E342D68DC6D0075E94E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +91,7 @@
 			);
 			name = OllamaGUI;
 			packageProductDependencies = (
+				DB06C9582D69DD870023246A /* Highlighter */,
 			);
 			productName = OllamaGUI;
 			productReference = DB454E332D68DC6D0075E94E /* OllamaGUI.app */;
@@ -77,6 +104,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
@@ -94,6 +124,9 @@
 			);
 			mainGroup = DB454E2A2D68DC6D0075E94E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DB06C9572D69DD870023246A /* XCRemoteSwiftPackageReference "HighlighterSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DB454E342D68DC6D0075E94E /* Products */;
 			projectDirPath = "";
@@ -178,7 +211,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MERGEABLE_LIBRARY = NO;
+				MERGED_BINARY_TYPE = none;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -235,7 +270,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 15.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
+				MERGEABLE_LIBRARY = NO;
+				MERGED_BINARY_TYPE = none;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -257,16 +294,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OllamaGUI/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FishBj.OllamaGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -284,16 +323,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OllamaGUI/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = FishBj.OllamaGUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -319,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB06C9572D69DD870023246A /* XCRemoteSwiftPackageReference "HighlighterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smittytone/HighlighterSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB06C9582D69DD870023246A /* Highlighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB06C9572D69DD870023246A /* XCRemoteSwiftPackageReference "HighlighterSwift" */;
+			productName = Highlighter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB454E2B2D68DC6D0075E94E /* Project object */;
 }
